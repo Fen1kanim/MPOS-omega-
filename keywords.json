@@ -1,0 +1,35 @@
+{
+    "hi": [
+        "hi",
+        "hello",
+        "hallo",
+        "h"
+    ],
+    "time": [
+        "time",
+        "which time it is?",
+        "which time is it?",
+        "which time is it",
+        "which time it is",
+        "time?"
+    ],
+    "date": [
+        "date",
+        "which date it is?",
+        "which date is it?",
+        "which date is it",
+        "which date it is",
+        "date?"
+    ],
+    "firefox": [
+        "fire",
+        "firefox",
+        "open firefox",
+        "please open firefox"
+    ],
+    "steam": [
+        "steam",
+        "open steam",
+        "please open steam"
+    ]
+}
