@@ -14,6 +14,7 @@ while True: # main cycle
     [[print('No problem!'), os.system('steam')] for i in js["steam"] if stdin == i] # open steam
     [os.system('clear') if stdin == 'clear' or stdin == 'cls' else None] # clear terminal
     if stdin == 'exit': # exit to terminal
+        print("byeee")
         break
     if stdin == 'calc':
         print('entered the calc mode')
