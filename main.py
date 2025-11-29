@@ -10,15 +10,14 @@ print()
 
 while True: # main cycle
     stdin = input("--> ")
-    [call(["python", "./python/help.py"]) if stdin == 'help' else None]
+    [call(["python", "./python/help.py"]) if stdin == 'help' else None] # help
     [print('Hi! How r u?') for i in js["hi"] if stdin == i] # hi
     [print('It is', datetime.datetime.now().strftime("%H:%M")) for i in js["time"] if stdin == i] # time
     [print('Today is', datetime.datetime.now().strftime("%d %B of %y")) for i in js["date"] if stdin == i] # date
-    [[print('No problem!'), os.system('firefox')] for i in js["firefox"] if stdin == i] # open firefox
-    [[print('No problem!'), os.system('steam')] for i in js["steam"] if stdin == i] # open steam
     [os.system('clear') if stdin == 'clear' or stdin == 'cls' else None] # clear terminal
+    [call(["python", "./python/open.py"]) for i in js["open"] if stdin == i] # open
     if stdin == 'exit': # exit to terminal
         print("byeee")
         break
-    if stdin == 'calc':
+    if stdin == 'calc': # calc
         call(["python", "./python/calc.py"])

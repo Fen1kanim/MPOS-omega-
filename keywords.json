@@ -31,5 +31,10 @@
         "steam",
         "open steam",
         "please open steam"
+    ],
+    "open": [
+        "open",
+        "open a prog",
+        "open a programm"
     ]
 }
