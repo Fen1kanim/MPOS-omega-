@@ -29,9 +29,8 @@ while True: # main cycle
     [print('It is', datetime.datetime.now().strftime("%H:%M")) for i in keywords["time"] if stdin == i] # time
 
     [print('Today is', datetime.datetime.now().strftime("%d %B of %y")) for i in keywords["date"] if stdin == i] # date
-                                                                # clear 0/1
-    [os.system('clear') if users[lastUser["name"]]["os"] == '0'\
-    else None if stdin == 'clear' or stdin == 'cls' else None] # clear 1/1
+
+    [os.system('clear') if stdin == 'clear' or stdin == 'cls' else None]
 
     [call(["python", "./python/open.py"]) for i in keywords["open"] if stdin == i] # open
 
