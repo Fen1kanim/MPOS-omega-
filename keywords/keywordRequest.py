@@ -36,7 +36,7 @@ while True:
 
     [print('Today is', datetime.datetime.now().strftime("%d %B of %y")) for i in keywords["date"] if stdin == i] # date
 
-    [os.system('clear') if osTest == True else os.system('cls') if stdin == 'clear' or stdin == 'cls' else None] # clear
+    [os.system('clear') if osTest == True else os.system('cls') for i in keywords["clear"] if stdin == i] # clear
 
     [call(["python", "./keywords/open.py"]) for i in keywords["open"] if stdin == i] # open
 
