@@ -26,9 +26,11 @@ def osTest():
 while True:
     stdin = input("--> ") # as user for any commands
 
-    [call(["python", "./keywords/help.py"]) if stdin == 'help' else None] # help
+    [call(["python", "./keywords/uranus.py"]) for i in keywords["uran"] if stdin == i] # YOUR anus
 
-    [print('you are as', lastUser["name"], 'authorized') if stdin == 'whoami' else None] # whoami
+    [call(["python", "./keywords/help.py"]) for i in keywords["help"] if stdin == i] # help
+
+    [print('you are as', lastUser["name"], 'authorized') for i in keywords["whoami"] if stdin == i] # whoami
 
     [print('Hi! How r u?') for i in keywords["hi"] if stdin == i] # hi
 
