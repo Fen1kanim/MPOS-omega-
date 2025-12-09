@@ -20,19 +20,20 @@ def osTest():
     if os == "0":
         system = True
         return system
-    
 
 #main loop
 while True:
     stdin = input("--> ") # as user for any commands
 
+    [call(["python", "./keywords/uranus.py"]) for i in keywords["uran"] if stdin == i] # YOUR anus
+
     [call(["python", "./keywords/uranium.py"]) for i in keywords["uranium"] if stdin == i] # uranium
 
     [call(["python", "./keywords/randon.py"]) for i in keywords["random"] if stdin == i] # random
-    
-    [call(["python", "./keywords/help.py"]) if stdin == 'help' else None] # help
 
-    [print('you are as', lastUser["name"], 'authorized') if stdin == 'whoami' else None] # whoami
+    [call(["python", "./keywords/help.py"]) for i in keywords["help"] if stdin == i] # help
+
+    [print('you are as', lastUser["name"], 'authorized') for i in keywords["whoami"] if stdin == i] # whoami
 
     [print('Hi! How r u?') for i in keywords["hi"] if stdin == i] # hi
 

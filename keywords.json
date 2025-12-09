@@ -52,6 +52,21 @@
         "cls",
         "clear terminal"
     ],
+
+    "whoami": [
+        "whoami",
+        "who am I authorized as?",
+        "who am I authorized as",
+        "who am I?",
+        "who am I"
+    ],
+    "help": [
+        "help",
+        "which command can i use",
+        "which command can i use?",
+        "HELP ME"
+    ],
+
     "uranium": [
     	"uran",
     	"uranium",
