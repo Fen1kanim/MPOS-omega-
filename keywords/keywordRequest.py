@@ -25,7 +25,7 @@ def osTest():
 while True:
     stdin = input("--> ") # as user for any commands
 
-    [call(["python", "./keywords/uranus.py"]) for i in keywords["uran"] if stdin == i] # YOUR anus
+    [call(["python", "./keywords/uranus.py"]) for i in keywords["uranium"] if stdin == i] # YOUR anus
 
     [call(["python", "./keywords/uranium.py"]) for i in keywords["uranium"] if stdin == i] # uranium
 
