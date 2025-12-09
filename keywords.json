@@ -57,5 +57,9 @@
     	"uranium",
     	"uranium-235",
     	"uranium-238"
+    ],
+    "random": [
+        "random",
+        "rndm"
     ]
 }
