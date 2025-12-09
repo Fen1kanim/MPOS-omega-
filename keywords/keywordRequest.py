@@ -27,6 +27,8 @@ while True:
     stdin = input("--> ") # as user for any commands
 
     [call(["python", "./keywords/uranium.py"]) for i in keywords["uranium"] if stdin == i] # uranium
+
+    [call(["python", "./keywords/randon.py"]) for i in keywords["random"] if stdin == i] # random
     
     [call(["python", "./keywords/help.py"]) if stdin == 'help' else None] # help
 
