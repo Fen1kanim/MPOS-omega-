@@ -32,7 +32,7 @@ snake and tictactoe.*
 ## Project structure
 
 Well. In the core directory (./) you can see the GPL License,  
-README.md (this file), main.py, keywords.json and 2 directorys.
+README.md (this file), main.py, keywords.json and 2 directories.  
 You should run main.py to start start the programm.  
 Every command can be printed in differend ways.  
 As example, you can write cls or clear to clear the terminal.  
