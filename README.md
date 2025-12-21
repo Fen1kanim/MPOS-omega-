@@ -62,9 +62,9 @@ after that you have to initialize it in keywords/keywordsRequest.py like this:
 
 add a python file to *keywords/*, with the functionality of your keyword.  
 Oh, and don`t forget to add your keywords to a known keywords in *\./keywords/keywordRequest.py* like this:  
-**if stdin not in keywords['game'\] \\
-  and stdin not in keywords['command'\] \\
-  and stdin != 'exit':
-      print('sorry, unknown command\ntry again')**
+**if stdin not in keywords['game'\] \\  
+  and stdin not in keywords['command'\] \\  
+  and stdin != 'exit':  
+      print('sorry, unknown command\ntry again')**  
 
 And if you`ve done everything corectly, there will be a new command!
