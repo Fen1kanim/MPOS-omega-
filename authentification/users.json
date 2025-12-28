@@ -1,3 +1,10 @@
 {
-
+    "face": {
+        "password": "qwes",
+        "os": "0"
+    },
+    "fds": {
+        "password": "qws",
+        "os": "0"
+    }
 }

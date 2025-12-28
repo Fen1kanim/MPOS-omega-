@@ -1,15 +1,16 @@
-from subprocess import call
-
-print('''0) add new user
+from authentification.add import addingNewUser
+from authentification.authentification import auth
+def request():
+    print('''0) add new user
 1) authentificate
 ''')
 
-choose = input('choose something(01): ')
+    choose = input('choose something(01): ')
 
-if choose == '0':
-    call(['python', './authentification/add.py'])
-elif choose == '1':
-    call(['python', './authentification/authentification.py'])
-else:
-    print('try again')
-    call(['python', './authentification/request.py'])
+    if choose == '0':
+        addingNewUser()
+    elif choose == '1':
+        auth()
+    else:
+        print('try again')
+        request()
