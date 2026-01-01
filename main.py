@@ -1,7 +1,7 @@
-from authentification import request
+from authentification import request, auth
 from keywords import *
 # the main programm opens
-request()
+name = request()
 
 print('''\n▗▖ ▗▖▗▄▄▄▖▗▖    ▗▄▄▖ ▗▄▖ ▗▖  ▗▖▗▄▄▄▖    ▗▄▄▄▖▗▄▖     ▗▖  ▗▖▗▄▄▖  ▗▄▖  ▗▄▄▖
 ▐▌ ▐▌▐▌   ▐▌   ▐▌   ▐▌ ▐▌▐▛▚▞▜▌▐▌         █ ▐▌ ▐▌    ▐▛▚▞▜▌▐▌ ▐▌▐▌ ▐▌▐▌
@@ -12,4 +12,4 @@ print('''\n▗▖ ▗▖▗▄▄▄▖▗▖    ▗▄▄▖ ▗▄▖ ▗▖  
 print("print help to list comands")
 print()
 
-keywords()
+keywords(name)

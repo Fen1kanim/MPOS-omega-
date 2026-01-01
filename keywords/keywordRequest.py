@@ -9,7 +9,7 @@ from keywords.time import time
 from keywords.date import date
 from keywords.clear import clear
 
-def keywords():
+def keywords(name):
     #import databases
     with open('keywords.json', 'r') as js:
         keywords = json.load(js)
@@ -28,7 +28,7 @@ def keywords():
 
         help() if stdin in keywords['help'] else None # help
 
-        whoami() if stdin in keywords['whoami'] else None # whoami
+        whoami(name) if stdin in keywords['whoami'] else None # whoami
 
         print('Hi! How r u?')  if stdin in keywords['hi'] else None # hi
 

@@ -3,22 +3,14 @@ import json
 def auth():
     with open("authentification/users.json", "r") as js:
         users = json.load(js)
-    with open("authentification/lastUser.json", "r") as js:
-        lastUser = json.load(js)
     print()
 
-    name = input('Username: ')
-    password = input('Password: ')
+    while True:
+        name = input('Username: ')
+        password = input('Password: ')
 
-    if name in users:
-        if password == users[name]['password']:
+        if name in users and password == users[name]["password"]:
             print('you are as', name, 'authentificated\n')
-            lastUser["name"] = name
-            with open('./authentification/lastUser.json', 'w') as js:
-                json.dump(lastUser, js, indent = 4)
+            return name
         else:
-            print('wrong password, try again')
-            auth()
-    else:
-        print('wrong username, try again')
-        auth()
+            print('wrong password or username, try again')

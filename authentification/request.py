@@ -8,9 +8,9 @@ def request():
     choose = input('choose something(01): ')
 
     if choose == '0':
-        addingNewUser()
+        return addingNewUser()
     elif choose == '1':
-        auth()
+        return auth()
     else:
         print('try again')
         request()
