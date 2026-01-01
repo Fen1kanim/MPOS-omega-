@@ -1,7 +1,7 @@
 import json
 
 def addingNewUser():
-    with open('./authentification/users.json', 'r') as js:
+    with open('./auth/users.json', 'r') as js:
         users = json.load(js)
     name = input('\nusername: ')
     password = input('password: ')
@@ -11,7 +11,7 @@ choose your operation system(01): ''')
 
     if os == '0':
         users[name] = {'password': password}
-        with open('./authentification/users.json', 'w') as js:
+        with open('./auth/users.json', 'w') as js:
             json.dump(users, js, indent = 4)
         return name
     elif os == '1':

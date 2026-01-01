@@ -1,7 +1,7 @@
 import json
 
 def auth():
-    with open("authentification/users.json", "r") as js:
+    with open("auth/users.json", "r") as js:
         users = json.load(js)
     print()
 
