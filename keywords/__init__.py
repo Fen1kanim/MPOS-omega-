@@ -18,7 +18,7 @@ from .regular.clear import clear
 from .regular.chpassword import chpassword
 
 # Note
-from .notes.note import noteMenu
+from .notes.noteMenu import noteMenu
 from .notes.askNotes import ask4notes
 from .notes.takeANote import takeANote
 
